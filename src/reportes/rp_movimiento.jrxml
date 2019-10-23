@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rp_movimiento" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8440f4fa-42dc-4b03-a3e0-8cbc9f2447f5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="fechaMovimiento" class="java.lang.String"/>
+	<field name="tipoMovimiento" class="java.lang.String"/>
+	<field name="cantidadIngreso" class="java.lang.Integer"/>
+	<field name="precioIngreso" class="java.math.BigDecimal"/>
+	<field name="totalIngreso" class="java.math.BigDecimal"/>
+	<field name="cantidadVenta" class="java.lang.Integer"/>
+	<field name="precioVenta" class="java.math.BigDecimal"/>
+	<field name="totalVenta" class="java.math.BigDecimal"/>
+	<field name="cantidadTotal" class="java.lang.Integer"/>
+	<field name="precioTotal" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="46" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="0" y="0" width="66" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{fechaMovimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="66" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tipoMovimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="154" y="0" width="62" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cantidadIngreso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="216" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{precioIngreso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="304" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{totalIngreso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="392" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cantidadVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="480" y="0" width="87" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{precioVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="567" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{totalVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="655" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cantidadTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="494906a6-0349-4180-94df-2c58bdb82bda" x="743" y="0" width="59" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{precioTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
